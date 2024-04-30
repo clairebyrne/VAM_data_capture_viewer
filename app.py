@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
 import folium
+from folium import LayerControl, LatLngPopup
 from streamlit_folium import st_folium
 import os
 import gpxpy
-from app_fncs import prep_gpx, make_map
+from app_fncs import prep_gpx, make_map, poi_fg
 
 st.set_page_config(
     page_title="VAM content checker",
@@ -20,6 +21,12 @@ walks= walks.dropna(how='all')
 # lets only use rows that have gpx files for now
 walks = walks.dropna(subset='GeoJson')
 
+# get POI data
+pois = pd.read_csv('POIs.csv')
+
+pois = pois.dropna(how='all')
+pois = pois.dropna(subset=['Latitude', 'Longitude'])
+
 # set gpx folder location
 gpx_dir = r"./gpx/"
 
@@ -29,9 +36,13 @@ walklist  = list(walks.Name.unique())
 selected_walk = st.selectbox(label='Select a walk from the dropdown list ...', options= walklist)
 # create filtered dataframe
 selected_walk_details = walks[walks['Name']==selected_walk]
+selected_walk_pois = pois[pois['WALK_Name']==selected_walk]
 
 st.write('Walk description:', '  \n', selected_walk_details.iloc[0,1])
 st.dataframe(selected_walk_details)
+
+st.write('POIs on this walk:') 
+st.dataframe(selected_walk_pois)
 
 col = st.columns((2, 5, 2), gap='medium')
 
@@ -55,9 +66,14 @@ with col[1]:
         start_point = [selected_walk_details.iloc[0, 4], selected_walk_details.iloc[0, 5]]
         end_point = [selected_walk_details.iloc[0, 6], selected_walk_details.iloc[0, 7]]
         map = make_map(gpx_pt_tpl, centre, start_point, end_point)
+        if selected_walk_pois.shape[0] > 0:
+            pois = poi_fg(selected_walk_pois)
+            map.add_child(pois)
+            LayerControl().add_to(map)
+
         st_data = st_folium(map, width='100%')
 
 with col[2]:
     st.write('**Gear**: ', selected_walk_details.iloc[0, 14])
     st.write('**Safety**: ', selected_walk_details.iloc[0, 15])
-    st.write('**Car Park getting started:** ', selected_walk_details.iloc[0, 16])
+    st.write('**Car Park getting started:** ', selected_walk_details.iloc[0, 16]) 

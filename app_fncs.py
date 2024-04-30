@@ -1,5 +1,6 @@
 import gpxpy
 import folium
+from folium import FeatureGroup, Marker
 
 def prep_gpx(gpxData):
     '''adapted from 
@@ -24,3 +25,10 @@ def make_map(gpx_pt_tpl, centre, start_point, end_point):
     folium.Marker(start_point, icon=folium.Icon(color='green'), popup="start point", tooltip="Start point").add_to(myMap)
     folium.Marker(end_point, icon=folium.Icon(color='red'), popup="end point", tooltip="end point").add_to(myMap)
     return myMap
+
+def poi_fg(poi_df):
+    pois = FeatureGroup(name='POIs')
+    for id, row in poi_df.iterrows():
+        pois.add_child(Marker(location=[row['Latitude'], row['Longitude']], popup=row['Title']))
+
+    return pois
