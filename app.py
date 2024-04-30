@@ -14,14 +14,14 @@ st.set_page_config(
 st.title('🥾 VAM content checker')
 st.write('## A first release of an app to help validate the data captured for each walk. ')
 # get walks data
-walks = pd.read_csv('walks_17042024.csv', usecols=['Name', 'GeneralDescription', 'GeoJson', 'ShapeName', 'StartLocationLat', 'StartLocationLng', 'EndLocationLat', 'EndLocationLng', 'CoverImage', 
+walks = pd.read_csv('WALKS.csv', usecols=['Name', 'GeneralDescription', 'GeoJson', 'ShapeName', 'StartLocationLat', 'StartLocationLng', 'EndLocationLat', 'EndLocationLng', 'CoverImage', 
 'Duration', 'Distance', 'Grading', 'Height', 'Ascent', 'Gear', 'Safety','CarparkGettingStart',	'WayMarked', 'DogsAllowed', 'Facilities', 'Accessible', 'AccessibleToilet', 'AccessibleTerrainDescription', 'NearestCarpark'])
 walks= walks.dropna(how='all')
 # lets only use rows that have gpx files for now
 walks = walks.dropna(subset='GeoJson')
 
 # set gpx folder location
-gpx_dir = r'C:\VAM\VAM_data_capture_viewer\gpx'
+gpx_dir = r"./gpx/"
 
 
 # get list of walks from data
