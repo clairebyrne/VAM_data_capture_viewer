@@ -12,8 +12,8 @@ st.set_page_config(
     page_icon="🥾",
     layout="wide")
 
-st.title('🥾 VAM content checker')
-st.write('## A first release of an app to help validate the data captured for each walk. ')
+st.title('🥾 App content checker')
+st.write('## An app to help validate the data captured for each walk.')
 
 # get walks data
 walks = pd.read_csv('WALKS.csv', usecols=['Name', 'GeneralDescription', 'GeoJson', 'ShapeName', 'StartLocationLat', 'StartLocationLng', 'EndLocationLat', 'EndLocationLng', 'CoverImage', 
