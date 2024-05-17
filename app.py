@@ -17,10 +17,11 @@ st.write('## An app to help validate the data captured for each walk.')
 
 # get walks data
 walks = pd.read_csv('WALKS.csv', usecols=['Name', 'GeneralDescription', 'GeoJson', 'ShapeName', 'StartLocationLat', 'StartLocationLng', 'EndLocationLat', 'EndLocationLng', 'CoverImage', 
-'Duration', 'Distance', 'Grading', 'Height', 'Ascent', 'Gear', 'Safety','CarparkGettingStart',	'WayMarked', 'DogsAllowed', 'Facilities', 'Accessible', 'AccessibleToilet', 'AccessibleTerrainDescription', 'NearestCarpark'])
+'Duration', 'Distance', 'Grading', 'Height', 'Ascent', 'Gear', 'Safety','CarparkGettingStart',	'WayMarked', 'DogsAllowed', 'Facilities', 'Accessible', 'AccessibleToilet', 'AccessibleTerrainDescription', 'NearestCarpark', 'ToEvolveTech'])
 walks= walks.dropna(how='all')
 # lets only use rows that have gpx files for now
 walks = walks.dropna(subset='GeoJson')
+walks = walks[walks.ToEvolveTech == 'Release1']
 
 # get POI data
 pois = pd.read_csv('POIs.csv')
@@ -48,6 +49,9 @@ selected_walk_imgs = images[images['Name']==selected_walk]
 
 st.write('Walk description:', '  \n', selected_walk_details.iloc[0,1])
 st.dataframe(selected_walk_details)
+
+# show cover image
+st.image(os.path.join(img_dir, selected_walk_details.iloc[0,8]), caption='Cover Image')
 
 st.write('Table of POIs on this walk. (Also shown as points on the map.)') 
 st.dataframe(selected_walk_pois)
