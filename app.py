@@ -14,6 +14,7 @@ st.set_page_config(
 
 st.title('🥾 App content checker')
 st.write('## An app to help validate the data captured for each walk.')
+st.write('### Current Phase: Release 1 - Walks 1-10')
 
 # get walks data
 walks = pd.read_csv('WALKS.csv', usecols=['Name', 'GeneralDescription', 'GeoJson', 'ShapeName', 'StartLocationLat', 'StartLocationLng', 'EndLocationLat', 'EndLocationLng', 'CoverImage', 
