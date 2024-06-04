@@ -14,7 +14,9 @@ st.set_page_config(
 
 st.title('🥾 App content checker')
 st.write('## An app to help validate the data captured for each walk.')
-st.write('### Current Phase: Release 1 - Walks 1-10')
+#st.write('### Current Phase: Release 1 - Walks 1-10')
+
+data_phase = st.selectbox('Select data capture phase... ', ('Release2', 'Release1'))
 
 # get walks data
 walks = pd.read_csv('WALKS.csv', usecols=['Name', 'GeneralDescription', 'GeoJson', 'ShapeName', 'StartLocationLat', 'StartLocationLng', 'EndLocationLat', 'EndLocationLng', 'CoverImage', 
@@ -22,9 +24,10 @@ walks = pd.read_csv('WALKS.csv', usecols=['Name', 'GeneralDescription', 'GeoJson
 walks= walks.dropna(how='all')
 # lets only use rows that have gpx files for now
 walks = walks.dropna(subset='GeoJson')
-walks = walks[walks.ToEvolveTech == 'Release1']
+# and only rows that are from the selected data phase
+walks = walks[walks.ToEvolveTech == data_phase]
 
-# get POI data
+# get POI data 
 pois = pd.read_csv('POIs.csv')
 pois = pois.dropna(how='all')
 pois = pois.dropna(subset=['Latitude', 'Longitude'])

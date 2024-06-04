@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Hiiker" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Shay Elliot Forest Car Park - Ballyboy Viewpoint Trail</name>
+    <time>2024-06-04T06:20:30+00:00</time>
+    <bounds minlat="52.96893" minlon="-6.33521" maxlat="52.97088" maxlon="-6.3189"/>
+  </metadata>
+  <trk>
+    <name>Shay Elliot Forest Car Park - Ballyboy Viewpoint Trail</name>
+    <trkseg>
+      <trkpt lat="52.96893" lon="-6.3189">
+        <ele>377.8</ele>
+      </trkpt>
+      <trkpt lat="52.96901" lon="-6.31904">
+        <ele>378.0</ele>
+      </trkpt>
+      <trkpt lat="52.96936" lon="-6.31944">
+        <ele>380.5</ele>
+      </trkpt>
+      <trkpt lat="52.96974" lon="-6.31981">
+        <ele>383.2</ele>
+      </trkpt>
+      <trkpt lat="52.9700599" lon="-6.32015">
+        <ele>384.8</ele>
+      </trkpt>
+      <trkpt lat="52.97026" lon="-6.32042">
+        <ele>385.0</ele>
+      </trkpt>
+      <trkpt lat="52.97028" lon="-6.32095">
+        <ele>382.0</ele>
+      </trkpt>
+      <trkpt lat="52.97021" lon="-6.32189">
+        <ele>377.0</ele>
+      </trkpt>
+      <trkpt lat="52.97022" lon="-6.32333">
+        <ele>371.8</ele>
+      </trkpt>
+      <trkpt lat="52.97018" lon="-6.32366">
+        <ele>370.9</ele>
+      </trkpt>
+      <trkpt lat="52.97023" lon="-6.32401">
+        <ele>370.2</ele>
+      </trkpt>
+      <trkpt lat="52.97043" lon="-6.32476">
+        <ele>369.1</ele>
+      </trkpt>
+      <trkpt lat="52.97066" lon="-6.32551">
+        <ele>370.0</ele>
+      </trkpt>
+      <trkpt lat="52.97085" lon="-6.32634">
+        <ele>372.7</ele>
+      </trkpt>
+      <trkpt lat="52.97088" lon="-6.3263999">
+        <ele>373.0</ele>
+      </trkpt>
+      <trkpt lat="52.97087" lon="-6.32676">
+        <ele>373.1</ele>
+      </trkpt>
+      <trkpt lat="52.97078" lon="-6.32745">
+        <ele>370.4</ele>
+      </trkpt>
+      <trkpt lat="52.97078" lon="-6.32772">
+        <ele>370.0</ele>
+      </trkpt>
+      <trkpt lat="52.9707099" lon="-6.32841">
+        <ele>368.1</ele>
+      </trkpt>
+      <trkpt lat="52.9707099" lon="-6.32913">
+        <ele>366.5</ele>
+      </trkpt>
+      <trkpt lat="52.9706" lon="-6.32986">
+        <ele>364.3</ele>
+      </trkpt>
+      <trkpt lat="52.9705299" lon="-6.3300599">
+        <ele>363.6</ele>
+      </trkpt>
+      <trkpt lat="52.97049" lon="-6.33031">
+        <ele>364.0</ele>
+      </trkpt>
+      <trkpt lat="52.97042" lon="-6.33047">
+        <ele>363.7</ele>
+      </trkpt>
+      <trkpt lat="52.97034" lon="-6.3308099">
+        <ele>364.0</ele>
+      </trkpt>
+      <trkpt lat="52.9703" lon="-6.33106">
+        <ele>364.3</ele>
+      </trkpt>
+      <trkpt lat="52.97018" lon="-6.33148">
+        <ele>364.3</ele>
+      </trkpt>
+      <trkpt lat="52.96991" lon="-6.33288">
+        <ele>362.7</ele>
+      </trkpt>
+      <trkpt lat="52.96972" lon="-6.3334">
+        <ele>359.2</ele>
+      </trkpt>
+      <trkpt lat="52.96964" lon="-6.33354">
+        <ele>357.2</ele>
+      </trkpt>
+      <trkpt lat="52.96952" lon="-6.33395">
+        <ele>353.6</ele>
+      </trkpt>
+      <trkpt lat="52.96952" lon="-6.33412">
+        <ele>353.2</ele>
+      </trkpt>
+      <trkpt lat="52.96955" lon="-6.3343299">
+        <ele>353.5</ele>
+      </trkpt>
+      <trkpt lat="52.96956" lon="-6.33456">
+        <ele>353.5</ele>
+      </trkpt>
+      <trkpt lat="52.96954" lon="-6.3349399">
+        <ele>352.5</ele>
+      </trkpt>
+      <trkpt lat="52.9695899" lon="-6.33521">
+        <ele>351.5</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
