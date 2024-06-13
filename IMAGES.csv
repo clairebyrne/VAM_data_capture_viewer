@@ -1,62 +1,32 @@
 ﻿Trail_CODE,Name,Type,CODE,Title,FILENAME,DESCRIPTION,Column2
-AFC,Avondale Forest Park - Centenary Trail,,AFC2,Avondale Viewing Tower,AFC2.jpg,,
-AFC,Avondale Forest Park - Centenary Trail,,AFC4,Avondale House,AFC4.jpg,,
-AFC,Avondale Forest Park - Centenary Trail,,AFC5,Avondale Beyond the Trees,AFC5.jpg,,
-AFC,Avondale Forest Park - Centenary Trail,,AFC6,Avondale Beyond the Trees,AFC6.jpg,,
-AFC,Avondale Forest Park - Centenary Trail,,AFC7,Map,AFC7.png,,
 AFR,Avondale Forest Park - River Walk,,AV1,Bridge,AV1.jpeg,,
 AFR,Avondale Forest Park - River Walk,,AV2,Forest,AV2.jpg,,
 AFR,Avondale Forest Park - River Walk,,AV3,Tower,AV3.jpg,,
 AFR,Avondale Forest Park - River Walk,,AV4,Tree Top Walk,AV4.jpg,,
 AFR,Avondale Forest Park - River Walk,,AV5,Forest Park,AV5.jpg,,
-BCL,Ballycumber Loop,,BCL2,Track with Wall,BCL2.jpg,,
-BCL,Ballycumber Loop,,BCL3,Track,BCL3.jpg,,
-BCL,Ballycumber Loop,,BCL5,Map,BCL5.jpg,,
-BCL,Ballycumber Loop,,BCL6,Tinahely,BCL6.jpg,,
-BGWT,Blessington Greenway Walking Trail,,BGW1,Lake,BGW1.jpg,,
-BGW,Ballygannon - Green Walk,,BGW1,Forest,BGW1.jpeg,,Add map image
-BGWT,Blessington Greenway Walking Trail,,BGW2,Path,BGW2.jpg,,
-BGW,Ballygannon - Green Walk,,BGW2,Black Stack,BGW2.jpg,,
-BGWT,Blessington Greenway Walking Trail,,BGW3,Path 2,BGW3.jpg,,
-BGW,Ballygannon - Green Walk,,BGW3,Forest track,BGW3.jpg,,
-BGWT,Blessington Greenway Walking Trail,,BGW4,Trail over Lake,BGW4.jpg,,
-BGWT,Blessington Greenway Walking Trail,,BGW5,Track beside Lake,BGW5.jpeg,,
-BGWT,Blessington Greenway Walking Trail,,BGW6,Lake 2,BGW6.jpg,,
-BHL,Bray Head Loop Walk,POI,BHW1,Trail with Sea Views,BHW1.jpg,,
-BHL,Bray Head Loop Walk,POI,BHW2,Bray Head Cross,BHW2.jpeg,,
-BHL,Bray Head Loop Walk,POI,BHW3,View of Bray,BHW3.jpg,,
-BRW,Ballygannon - Red Walk,,BRW1,Forest path,BRW1.jpg,,Add map image
-BRW,Ballygannon - Red Walk,,BRW2,Trailhead Sign,BRW2.jpg,,
-CWM,Crone Woods - Maulin Mountain Loop,,CWM1,Track with Sign,CWM1.jpg,,
-DGS,The Devil's Glen - Seamus Heaney Walk,,DG2,Forest,DG2.jpg,,Ok
-DGS,The Devil's Glen - Seamus Heaney Walk,,DG5,Bridge over valley,DG5.jpg,,Ok
-DGS,The Devil's Glen - Seamus Heaney Walk,,DG6,View,DG6.jpg,,Ok
-DGW,The Devil's Glen - Waterfall Walk,,DGW1,Waterfall,DGW1.jpg,,
+DGW,The Devil's Glen - Waterfall Walk,,DGW1,The Devils Glen Waterfall ,DGW1.jpg,,
 DGW,The Devil's Glen - Waterfall Walk,,DGW2,Forest Path,DGW2.jpg,,
 DGW,The Devil's Glen - Waterfall Walk,,DGW3,Arch,DGW3.jpg,,
 DGW,The Devil's Glen - Waterfall Walk,,DGW4,Top of Waterfall,DGW4.jpg,,
 DGW,The Devil's Glen - Waterfall Walk,,DGW5,Waterfall 2,DGW5.jpg,,
-DWD,Djouce Woods - Deerpark Walk,,DWD1,Track with valley,DWD1.jpg,,Add map image
-DWD,Djouce Woods - Deerpark Walk,,DWD3,Track with Forest,DWD3.jpg,,
-DWD,Djouce Woods - Deerpark Walk,,DWD5,Map,DWD5.jpg,,
-DWD,Djouce Woods - Deerpark Walk,,DWD7,Enniskerry,DWD7.jpg,,
+BGWT,Blessington Greenway Walking Trail,,BGWT1,Lake,BGWT1.jpg,,
+BGWT,Blessington Greenway Walking Trail,,BGWT2,Path,BGWT2.jpg,,
+BGWT,Blessington Greenway Walking Trail,,BGWT3,Path 2,BGWT3.jpg,,
+BGWT,Blessington Greenway Walking Trail,,BGWT4,Trail over Lake,BGWT4.jpg,,
+BGWT,Blessington Greenway Walking Trail,,BGWT5,Track beside Lake,BGWT5.jpeg,,
+BGWT,Blessington Greenway Walking Trail,,BGWT6,Lake 2,BGWT6.jpg,,
+BHL,Bray Head Loop Walk,POI,BHW1,Trail with Sea Views,BHW1.jpg,,
+BHL,Bray Head Loop Walk,POI,BHW2,Bray Head Cross,BHW2.jpeg,,
+BHL,Bray Head Loop Walk,POI,BHW3,View of Bray,BHW3.jpg,,
+ALG,Arklow Loops Glenart Walk,,GWW1,Path 1,GWW1.jpg,,
+ALG,Arklow Loops Glenart Walk,,GWW3,Glenart forest,GWW3.jpg,,
+ALG,Arklow Loops Glenart Walk,,GWW5,Path 2,GWW5.jpg,,
 DWT,Derrybawn Woodland Trail - Glendalough,POI,DWTG1,Polanass Waterfall,DWTG1.jpg,,
 DWT,Derrybawn Woodland Trail - Glendalough,POI,DWTG2,Glendalough Upper Lake,DWTG2.jpg,,
 DWT,Derrybawn Woodland Trail - Glendalough,POI,DWTG3,Trail with Lake View,DWTG3.jpeg,,
 DWT,Derrybawn Woodland Trail - Glendalough,POI,DWTG4,Glendalough Monastic Site,DWTG4.jpg,,
 DWT,Derrybawn Woodland Trail - Glendalough,POI,DWTG6,Glendalough Lower Lake,DWTG6.jpg,,
 DWT,Derrybawn Woodland Trail - Glendalough,POI,DWTG7,Round Tower Glendalough,DWTG7.jpg,,
-FLP,Fauna Loop,,FLP1,Map,FLP1.jpg,,use map image
-FLP,Fauna Loop,,FLP2,Donard Village,FLP2.jpg,,
-FLP,Fauna Loop,,FLP3,Lugnaquilla,FLP3.jpg,,
-FLP,Fauna Loop,,FLP4,Glen of Imaal,FLP4.jpg,,
-GBC,Glen Beach Cliff Walk,,GBC1,Cliff view toward golf course,GBC1.jpg,,Use map image
-GRW,Green Road Walk - Glendalough,,GRW2,Lake,GRW2.jpg,,
-GRW,Green Road Walk - Glendalough,,GRW3,Map,GRW3.jpg,,
-ALG,Arklow Loops Glenart Walk,,GWW1,Path 1,GWW1.jpg,,
-ALG,Arklow Loops Glenart Walk,,GWW3,Glenart forest,GWW3.jpg,,
-ALG,Arklow Loops Glenart Walk,,GWW5,Path 2,GWW5.jpg,,
-KLP,Kyle Loop,,KLP2,Ferns,KLP2.jpg,,
 KTT,Kindlestown Trail,POI,KT1,Sugarloaf 1,KT1.jpg,,
 KTT,Kindlestown Trail,POI,KT2,Trail 1,KT2.jpg,,
 KTT,Kindlestown Trail,POI,KT3,Trail 2,KT3.jpg,,
@@ -66,21 +36,10 @@ LMP,Lacken Mass Path,,LMP1,Lake View,LMP1.jpg,,
 LMP,Lacken Mass Path,,LMP2,Stone,LMP2.jpg,,
 LMP,Lacken Mass Path,,LMP3,Forest,LMP3.jpg,,
 LMP,Lacken Mass Path,,LMP4,Flower,LMP4.jpg,,
-MRW,Miners Road Walk - Glendalough,,MRW1,Trail in Forest,MRW1.jpg,,
-MRW,Miners Road Walk - Glendalough,,MRW2,Trail,MRW2.jpg,,
-MRW,Miners Road Walk - Glendalough,,MRW3,Mountain with Lake,MRW3.jpg,,
-PGL,Poulanass - Glendalough,,PGL1,Waterfall,PGL1.jpg,,
-PGL,Poulanass - Glendalough,,PGL2,Waterfall,PGL2.jpg,,
-PGL,Poulanass - Glendalough,,PGL3,Waterfall,PGL3.jpg,,
 ARK,Avoca Red Kite Loop,POI,RKW1,Forest Trail,RKW1.jpg,,
 ARK,Avoca Red Kite Loop,POI,RKW2,Sign,RKW2.jpg,,
 ARK,Avoca Red Kite Loop,POI,RKW3,Avoca Village,RKW3.jpg,,
 ARK,Avoca Red Kite Loop,POI,RKW4,Forest Trail 2,RKW4.jpg,,
-SGG,Spinc & Glenealo Valley - Glendalough,,SGG1,Lake,SGG1.jpg,,Ok
-SGG,Spinc & Glenealo Valley - Glendalough,,SGG2,Steps with Lake,SGG2.png,,Ok
-SGG,Spinc & Glenealo Valley - Glendalough,,SGG3,Track with Valley,SGG3.jpg,,Ok
-SGG,Spinc & Glenealo Valley - Glendalough,,SGG6,Miners Village,SGG6.jpg,,Ok
-SGG,Spinc & Glenealo Valley - Glendalough,,SGG7,Glendalough Upper Lake - copyright issue?,SGG7.jpg,,Crop
 KPP,St Kevins Way - Pilgrim Path,,SKWPP1,Valley,SKWPP1.jpg,,
 KPPV,St Kevins Way - Pilgrim Path (Valleymount),,SKWPP1,Valley,SKWPP1.jpg,,
 KPP,St Kevins Way - Pilgrim Path,,SKWPP2,River,SKWPP2.jpg,,
@@ -93,14 +52,70 @@ KPP,St Kevins Way - Pilgrim Path,,SKWPP5,Path with tree,SKWPP5.jpg,,
 KPPV,St Kevins Way - Pilgrim Path (Valleymount),,SKWPP5,Path with tree,SKWPP5.jpg,,
 KPP,St Kevins Way - Pilgrim Path,,SKWPP6,Road Sign,SKWPP6.jpg,,
 KPPV,St Kevins Way - Pilgrim Path (Valleymount),,SKWPP6,Road Sign,SKWPP6.jpg,,
-SLW,Sugar Loaf Way,,SLW1,Sugar Loaf Mountain,SLW1.jpg,,Ok
-SSG,Spinc - Short Route - Glendalough,,SSG2,Spinc with track,SSG2.jpg,,
-SSG,Spinc - Short Route - Glendalough,,SSG3,Map,SSG3.jpg,,Ok
-SSG,Spinc - Short Route - Glendalough,,SSG4,Poulaness Waterfall,SSG4.jpg,,Ok
-SSG,Spinc - Short Route - Glendalough,,SSG5,Glendalough Upper Lake - copyright issue?,SSG5.jpg,,Crop
-TRW,Tinahely Railway Walk,,TRW1,Bridge,TRW1.jpg,,Ok
-TRW,Tinahely Railway Walk,,TRW2,Underbridge,TRW2.jpg,,Ok
-TRW,Tinahely Railway Walk,,TRW5,Trail,TRW5.jpg,,Ok
-WRG,Woodland Road - Glendalough,,WRG1,House,WRG1.jpg,,Ok
-WRG,Woodland Road - Glendalough,,WRG2,Lake,WRG2.jpg,,Ok
-WRG,Woodland Road - Glendalough,,DWTG6,Glendalough Lower Lake,DWTG6.jpg,,Replace with lower lake pic
+AFC,Avondale Forest Park - Centenary Trail,OTHER,AFC2,Avondale Viewing Tower,AFC2.jpg,,
+AFC,Avondale Forest Park - Centenary Trail,COVER,AFC4,Avondale House,AFC4.jpg,,
+AFC,Avondale Forest Park - Centenary Trail,OTHER,AFC5,Avondale Beyond the Trees,AFC5.jpg,,
+AFC,Avondale Forest Park - Centenary Trail,OTHER,AFC6,Avondale Beyond the Trees,AFC6.jpg,,
+AFC,Avondale Forest Park - Centenary Trail,OTHER,AFC7,Map,AFC7.jpg,,Changed to PDF
+BCL,Ballycumber Loop,COVER,BCL2,Track with Wall,BCL2.jpg,,
+BCL,Ballycumber Loop,OTHER,BCL3,Track,BCL3.jpg,,
+BCL,Ballycumber Loop,OTHER,BCL5,Map,BCL5.jpg,,Changed to PDF
+BCL,Ballycumber Loop,SERV,BCL6,Tinahely,BCL6.jpg,,
+BGW,Ballygannon - Green Walk,COVER,BGW1,Forest,BGW1.jpeg,,
+BGW,Ballygannon - Green Walk,OTHER,BGW2,Black Stack,BGW2.jpg,,
+BGW,Ballygannon - Green Walk,OTHER,BGW3,Forest track,BGW3.jpg,,
+BGW,Ballygannon - Green Walk,OTHER,BRW4,Map,BGW4.pdf,,
+BRW,Ballygannon - Red Walk,COVER,BRW1,Forest path,BRW1.jpg,,
+BRW,Ballygannon - Red Walk,OTHER,BRW2,Trailhead Sign,BRW2.jpg,,
+BRW,Ballygannon - Red Walk,OTHER,BRW4,Map,BRW4.jpg,,Changed to PDF
+CWM,Crone Woods - Maulin Mountain Loop,COVER,CWM1,Track with Sign,CWM1.jpg,,
+CWM,Crone Woods - Maulin Mountain Loop,OTHER,CWM8,Map,CWM8.jpg,,Changed to PDF
+CWM,Crone Woods - Maulin Mountain Loop,POI,CWM6,Powerscourt Waterfall,CWM6.jpg,,
+DGS,The Devil's Glen - Seamus Heaney Walk,COVER,DGS2,Forest,DG2.jpg,,Ok
+DGS,The Devil's Glen - Seamus Heaney Walk,OTHER,DGS5,Forest Trail,DG5.jpg,,Ok
+DGS,The Devil's Glen - Seamus Heaney Walk,OTHER,DGS6,Map,DGS6.jpg,,PDF in 
+DGS,The Devil's Glen - Seamus Heaney Walk,POI,DGW1,The Devils Glen Waterfall ,DGW1.jpg,,
+DWD,Djouce Woods - Deerpark Walk,OTHER,DWD1,Track with valley,DWD1.jpg,,
+DWD,Djouce Woods - Deerpark Walk,OTHER,DWD3,Track with Forest,DWD3.jpg,,
+DWD,Djouce Woods - Deerpark Walk,COVER,DWD5,Map,DWD5.jpg,,Changed to PDF
+DWD,Djouce Woods - Deerpark Walk,SERV,DWD7,Enniskerry,DWD7.jpg,,
+FLP,Fauna Loop,COVER,FLP1,Map,FLP1.jpg,,Changed to PDF
+FLP,Fauna Loop,SERV,FLP2,Donard Village,FLP2.jpg,,
+FLP,Fauna Loop,POI,FLP3,Lugnaquilla,FLP3.jpg,,
+FLP,Fauna Loop,POI,FLP4,Glen of Imaal,FLP4.jpg,,
+GBC,Glen Beach Cliff Walk,COVER,GBC5,Map,GBC5.jpg,,Changed to PDF
+GRW,Green Road Walk - Glendalough,POI,GRW2,Glendalough Lower Lake,GRW2.jpg,,
+KLP,Kyle Loop,COVER,KLP2,Ferns,KLP2.jpg,,
+KLP,Kyle Loop,OTHER,KLP3,Map,KLP3.jpg,,Changed to PDF
+MLP,Mangan's Loop,COVER,MLP2,Map,MLP2.jpg,,Changed to PDF
+MRW,Miners Road Walk - Glendalough,COVER,MRW1,Trail in Forest,MRW1.jpg,,
+MRW,Miners Road Walk - Glendalough,OTHER,MRW2,Trail,MRW2.jpg,,
+MRW,Miners Road Walk - Glendalough,OTHER,MRW3,Mountain with Lake,MRW3.jpg,,
+MRW,Miners Road Walk - Glendalough,POI,MRW6,Glendalough Upper Lake,MRW6.jpg,,
+MRW,Miners Road Walk - Glendalough,POI,MRW7,St Kevins Bed,MRW7.jpg,,
+PGL,Poulanass - Glendalough,COVER,PGL1,Waterfall,PGL1.jpg,,
+PGL,Poulanass - Glendalough,POI,PGL2,Poulanass Waterfall,PGL2.jpg,,
+PGL,Poulanass - Glendalough,OTHER,PGL3,Waterfall,PGL3.jpg,,
+PGL,Poulanass - Glendalough,POI,DWTG2,Upper Lake Glendalough,DWTG2.jpg,,
+PGL,Poulanass - Glendalough,POI,MRW6,Glendalough Upper Lake,MRW6.jpg,,
+SEB,Shay Elliot Forest Car Park - Ballyboy Viewpoint Trail,COVER,SEB4,Map,SEB4.jpg,,Please check as on Sport Ireland as Ballinafunshogue Forest
+SGG,Spinc & Glenealo Valley - Glendalough,COVER,SGG1,Lake,SGG1.jpg,,Ok
+SGG,Spinc & Glenealo Valley - Glendalough,OTHER,SGG2,Steps with Lake,SGG2.png,,Ok
+SGG,Spinc & Glenealo Valley - Glendalough,OTHER,SGG3,Track with Valley,SGG3.jpg,,Ok
+SGG,Spinc & Glenealo Valley - Glendalough,POI,SGG6,Miners Village,SGG6.jpg,,Ok
+SGG,Spinc & Glenealo Valley - Glendalough,POI,SGG7,Glendalough Upper Lake - copyright issue?,SGG7.jpg,,Have croped
+SGG,Spinc & Glenealo Valley - Glendalough,POI,PGL2,Poulaness Waterfall,PGL2.jpg,,
+SLW,Sugar Loaf Way,COVER,SLW1,Sugar Loaf Mountain,SLW1.jpg,,Ok
+SLW,Sugar Loaf Way,OTHER,SLW5,Map,SLW5.jpg,,Changed to PDF
+SLW,Sugar Loaf Way,SERV,SLW6,Bray,SLW6.jpeg,,
+SSG,Spinc - Short Route - Glendalough,COVER,SSG2,Spinc with track,SSG2.jpg,,
+SSG,Spinc - Short Route - Glendalough,POI,SSG4,Poulaness Waterfall,SSG4.jpg,,Ok
+SSG,Spinc - Short Route - Glendalough,POI,SSG5,Glendalough Upper Lake - copyright issue?,SSG5.jpg,,Cropped
+TRW,Tinahely Railway Walk,OTHER,TRW1,Bridge,TRW1.jpg,,Ok
+TRW,Tinahely Railway Walk,COVER,TRW2,Underbridge,TRW2.jpg,,Ok
+TRW,Tinahely Railway Walk,OTHER,TRW5,Trail,TRW5.jpg,,Ok
+TRW,Tinahely Railway Walk,OTHER,TRW6,Map,TRW6.jpg,,Changed to PDF
+WRG,Woodland Road - Glendalough,COVER,WRG1,House,WRG1.jpg,,Ok
+WRG,Woodland Road - Glendalough,OTHER,WRG2,Lake,WRG2.jpg,,Ok
+WRG,Woodland Road - Glendalough,POI,DWTG6,Glendalough Lower Lake,DWTG6.jpg,,
+WRG,Woodland Road - Glendalough,POI,MRW6,Glendalough Upper Lake,MRW6.jpg,,
