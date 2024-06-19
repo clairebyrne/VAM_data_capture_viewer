@@ -16,14 +16,14 @@ st.title('🥾 App content checker')
 st.write('## An app to help validate the data captured for each walk.')
 #st.write('### Current Phase: Release 1 - Walks 1-10')
 
-data_phase = st.selectbox('Select data capture phase... ', ('Release2', 'Release1'))
+data_phase = st.selectbox('Select data capture phase... ', ('Release3', 'Release2', 'Release1'))
 
 # get walks data
 walks = pd.read_csv('WALKS.csv', usecols=['Name', 'ShortDescription', 'GeneralDescription', 'GeoJson', 'ShapeName', 'StartLocationLat', 'StartLocationLng', 'EndLocationLat', 'EndLocationLng', 'CoverImage', 
 'Duration', 'Distance', 'Grading', 'Height', 'Ascent', 'Gear', 'Safety','CarparkGettingStart',	'WayMarked', 'DogsAllowed', 'Facilities', 'Accessible', 'AccessibleToilet', 'AccessibleTerrainDescription', 'NearestCarpark', 'ToEvolveTech', 'CoverImageFile'])
 walks= walks.dropna(how='all')
 # lets only use rows that have gpx files for now
-walks = walks.dropna(subset='GeoJson')
+#walks = walks.dropna(subset='GeoJson')
 # and only rows that are from the selected data phase
 walks = walks[walks.ToEvolveTech == data_phase]
 
@@ -82,18 +82,21 @@ with col[0]:
     st.metric(label='Facilities', value=selected_walk_details.iloc[0, 20])
 
 with col[1]:
-    if len(selected_walk_details.GeoJson.iloc[0])>1:
-        gpx_file= os.path.join(gpx_dir, selected_walk_details.GeoJson.iloc[0])
-        gpx_pt_tpl, centre = prep_gpx(gpx_file)
-        start_point = [selected_walk_details.iloc[0, 5], selected_walk_details.iloc[0, 6]]
-        end_point = [selected_walk_details.iloc[0, 7], selected_walk_details.iloc[0, 8]]
-        map = make_map(gpx_pt_tpl, centre, start_point, end_point)
-        if selected_walk_pois.shape[0] > 0:
-            pois = poi_fg(selected_walk_pois)
-            map.add_child(pois)
-            LayerControl().add_to(map)
+    if len(str(selected_walk_details.GeoJson.iloc[0]))>1:
+        gpx_file= os.path.join(gpx_dir, str(selected_walk_details.GeoJson.iloc[0]))
+        if os.path.isfile(gpx_file):
+            gpx_pt_tpl, centre = prep_gpx(gpx_file)
+            start_point = [selected_walk_details.iloc[0, 5], selected_walk_details.iloc[0, 6]]
+            end_point = [selected_walk_details.iloc[0, 7], selected_walk_details.iloc[0, 8]]
+            map = make_map(gpx_pt_tpl, centre, start_point, end_point)
+            if selected_walk_pois.shape[0] > 0:
+                pois = poi_fg(selected_walk_pois)
+                map.add_child(pois)
+                LayerControl().add_to(map)
 
-        st_data = st_folium(map, width='100%')
+            st_data = st_folium(map, width='100%')
+        else:
+            st.write('## No map available as there is no gpx listed for this walk in the data capture sheet')
 
 with col[2]:
     st.markdown('### Other attributes')
