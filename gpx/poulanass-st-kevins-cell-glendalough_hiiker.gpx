@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Hiiker" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Poulanass &amp; St Kevins Cell - Glendalough</name>
+    <time>2024-06-26T16:52:18+00:00</time>
+    <bounds minlat="53.0018" minlon="-6.34902" maxlat="53.00465" maxlon="-6.3454"/>
+  </metadata>
+  <trk>
+    <name>Poulanass &amp; St Kevins Cell - Glendalough</name>
+    <trkseg>
+      <trkpt lat="53.0041" lon="-6.34567">
+        <ele>161.1</ele>
+      </trkpt>
+      <trkpt lat="53.00437" lon="-6.34557">
+        <ele>154.6</ele>
+      </trkpt>
+      <trkpt lat="53.00445" lon="-6.34562">
+        <ele>152.6</ele>
+      </trkpt>
+      <trkpt lat="53.00464" lon="-6.34579">
+        <ele>147.9</ele>
+      </trkpt>
+      <trkpt lat="53.00465" lon="-6.3461">
+        <ele>146.9</ele>
+      </trkpt>
+      <trkpt lat="53.00465" lon="-6.34623">
+        <ele>146.6</ele>
+      </trkpt>
+      <trkpt lat="53.00429" lon="-6.34703">
+        <ele>154.7</ele>
+      </trkpt>
+      <trkpt lat="53.00419" lon="-6.34749">
+        <ele>159.3</ele>
+      </trkpt>
+      <trkpt lat="53.0041" lon="-6.34791">
+        <ele>165.1</ele>
+      </trkpt>
+      <trkpt lat="53.00409" lon="-6.34827">
+        <ele>167.1</ele>
+      </trkpt>
+      <trkpt lat="53.00411" lon="-6.34858">
+        <ele>168.7</ele>
+      </trkpt>
+      <trkpt lat="53.00408" lon="-6.34895">
+        <ele>174.2</ele>
+      </trkpt>
+      <trkpt lat="53.00403" lon="-6.34902">
+        <ele>178.0</ele>
+      </trkpt>
+      <trkpt lat="53.0039299" lon="-6.34893">
+        <ele>183.1</ele>
+      </trkpt>
+      <trkpt lat="53.0038399" lon="-6.34882">
+        <ele>187.2</ele>
+      </trkpt>
+      <trkpt lat="53.00379" lon="-6.3487">
+        <ele>188.7</ele>
+      </trkpt>
+      <trkpt lat="53.00367" lon="-6.34798">
+        <ele>188.7</ele>
+      </trkpt>
+      <trkpt lat="53.00353" lon="-6.34746">
+        <ele>192.5</ele>
+      </trkpt>
+      <trkpt lat="53.00343" lon="-6.34703">
+        <ele>193.8</ele>
+      </trkpt>
+      <trkpt lat="53.00327" lon="-6.34665">
+        <ele>196.7</ele>
+      </trkpt>
+      <trkpt lat="53.00315" lon="-6.34626">
+        <ele>197.8</ele>
+      </trkpt>
+      <trkpt lat="53.00303" lon="-6.34609">
+        <ele>199.7</ele>
+      </trkpt>
+      <trkpt lat="53.0028999" lon="-6.3459899">
+        <ele>202.1</ele>
+      </trkpt>
+      <trkpt lat="53.00258" lon="-6.34582">
+        <ele>208.0</ele>
+      </trkpt>
+      <trkpt lat="53.00233" lon="-6.34564">
+        <ele>210.4</ele>
+      </trkpt>
+      <trkpt lat="53.0019" lon="-6.34577">
+        <ele>218.0</ele>
+      </trkpt>
+      <trkpt lat="53.00189" lon="-6.34577">
+        <ele>218.2</ele>
+      </trkpt>
+      <trkpt lat="53.0018" lon="-6.3458">
+        <ele>219.8</ele>
+      </trkpt>
+      <trkpt lat="53.00208" lon="-6.3456">
+        <ele>213.7</ele>
+      </trkpt>
+      <trkpt lat="53.0022" lon="-6.34548">
+        <ele>210.7</ele>
+      </trkpt>
+      <trkpt lat="53.00235" lon="-6.34544">
+        <ele>208.0</ele>
+      </trkpt>
+      <trkpt lat="53.00246" lon="-6.34546">
+        <ele>206.6</ele>
+      </trkpt>
+      <trkpt lat="53.00261" lon="-6.3454">
+        <ele>203.1</ele>
+      </trkpt>
+      <trkpt lat="53.00274" lon="-6.3455">
+        <ele>201.4</ele>
+      </trkpt>
+      <trkpt lat="53.00309" lon="-6.3455899">
+        <ele>194.7</ele>
+      </trkpt>
+      <trkpt lat="53.00335" lon="-6.3456">
+        <ele>189.0</ele>
+      </trkpt>
+      <trkpt lat="53.00376" lon="-6.34555">
+        <ele>173.8</ele>
+      </trkpt>
+      <trkpt lat="53.00382" lon="-6.34558">
+        <ele>171.6</ele>
+      </trkpt>
+      <trkpt lat="53.00392" lon="-6.34571">
+        <ele>167.9</ele>
+      </trkpt>
+      <trkpt lat="53.004" lon="-6.34571">
+        <ele>164.8</ele>
+      </trkpt>
+      <trkpt lat="53.00408" lon="-6.34568">
+        <ele>161.8</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
