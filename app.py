@@ -93,6 +93,8 @@ with col[1]:
                 pois = poi_fg(selected_walk_pois)
                 map.add_child(pois)
                 LayerControl().add_to(map)
+                map.add_child(folium.LatLngPopup())
+                #folium.LatLngPopup().add_to(map)
 
             st_data = st_folium(map, width='100%')
         else:
