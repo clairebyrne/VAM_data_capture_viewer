@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Hiiker" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Hiiker">
   <metadata>
     <name>Miner's Way</name>
-    <time>2024-06-26T16:50:42+00:00</time>
-    <bounds minlat="52.97432" minlon="-6.41339" maxlat="53.02637" maxlon="-6.3356"/>
+    <time>2024-06-26T16:50:42Z</time>
+    <bounds minlat="52.97432" maxlat="53.02637" minlon="-6.41339" maxlon="-6.3356" />
   </metadata>
   <trk>
     <name>Miner's Way</name>

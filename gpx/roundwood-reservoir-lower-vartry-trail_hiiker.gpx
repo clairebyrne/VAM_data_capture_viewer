@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Hiiker" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Hiiker">
   <metadata>
     <name>Roundwood Reservoir Lower Vartry Trail</name>
-    <time>2024-06-26T16:55:08+00:00</time>
-    <bounds minlat="53.05073" minlon="-6.22366" maxlat="53.06768" maxlon="-6.18347"/>
+    <time>2024-06-26T16:55:08Z</time>
+    <bounds minlat="53.05073" maxlat="53.06768" minlon="-6.22366" maxlon="-6.18347" />
   </metadata>
   <trk>
     <name>Roundwood Reservoir Lower Vartry Trail</name>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Hiiker" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Hiiker">
   <metadata>
     <name>Poulanass &amp; St Kevins Cell - Glendalough</name>
-    <time>2024-06-26T16:52:18+00:00</time>
-    <bounds minlat="53.0018" minlon="-6.34902" maxlat="53.00465" maxlon="-6.3454"/>
+    <time>2024-06-26T16:52:18Z</time>
+    <bounds minlat="53.0018" maxlat="53.00465" minlon="-6.34902" maxlon="-6.3454" />
   </metadata>
   <trk>
     <name>Poulanass &amp; St Kevins Cell - Glendalough</name>

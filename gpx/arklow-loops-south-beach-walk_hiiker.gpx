@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Hiiker" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Hiiker">
   <metadata>
     <name>Arklow Loops - South Beach Walk</name>
-    <time>2024-06-26T16:47:37+00:00</time>
-    <bounds minlat="52.786941" minlon="-6.15282" maxlat="52.80115" maxlon="-6.139871"/>
+    <time>2024-06-26T16:47:37Z</time>
+    <bounds minlat="52.786941" maxlat="52.80115" minlon="-6.15282" maxlon="-6.139871" />
   </metadata>
   <trk>
     <name>Arklow Loops - South Beach Walk</name>

@@ -5,7 +5,7 @@ from folium import LayerControl, LatLngPopup
 from streamlit_folium import st_folium
 import os
 import gpxpy
-from app_fncs import prep_gpx, make_map, poi_fg
+from app_fncs import prep_gpx, make_map, poi_fg, plot_layer_altair, parse_gpx # plot_cum_layer_altair, 
 
 st.set_page_config(
     page_title="VAM content checker",
@@ -56,15 +56,25 @@ st.write('Short description:', '  \n', selected_walk_details.iloc[0,1])
 st.write('General description:', '  \n', selected_walk_details.iloc[0,2])
 st.dataframe(selected_walk_details)
 
-if os.path.isfile(os.path.join(img_dir, str(selected_walk_details.iloc[0,26]))):
-    # show cover image
-    st.image(os.path.join(img_dir, selected_walk_details.iloc[0,26]), caption='Cover Image')
-else:
-    st.write(f'could not find image at {os.path.join(img_dir, selected_walk_details.iloc[0,26])}')
-    st.write('No cover image for this walk')
+# if os.path.isfile(os.path.join(img_dir, str(selected_walk_details.iloc[0,26]))):
+#     # show cover image
+#     st.image(os.path.join(img_dir, selected_walk_details.iloc[0,26]), caption='Cover Image')
+# else:
+#     st.write(f'could not find image at {os.path.join(img_dir, selected_walk_details.iloc[0,26])}')
+#     st.write('No cover image for this walk')
 
 st.write('Table of POIs on this walk. (Also shown as points on the map.)') 
 st.dataframe(selected_walk_pois)
+
+
+if len(str(selected_walk_details.GeoJson.iloc[0]))>1:
+        gpx_file= os.path.join(gpx_dir, str(selected_walk_details.GeoJson.iloc[0]))
+        if os.path.isfile(gpx_file):
+            distances, elevations = parse_gpx(gpx_file)
+            elev_plot_layer_altair = plot_layer_altair(distances, elevations)
+            st.altair_chart(elev_plot_layer_altair)
+            # elev_cum_plot_layer_altair = plot_cum_layer_altair(distances, elevations)
+            # st.altair_chart(elev_cum_plot_layer_altair)
 
 col = st.columns((2, 5, 2), gap='medium')
 
