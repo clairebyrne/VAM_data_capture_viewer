@@ -113,7 +113,7 @@ def plot_layer_altair(distances, elevations):
             alt.X('Distance (km)'),
             alt.Y('Elevation (m)'),
             strokeWidth=alt.value(4),
-            color=alt.value('#FFFFFF')
+            color=alt.value('#8DC63F')
         )
     
     line_chart_green = alt.Chart(data).mark_line(
@@ -121,10 +121,11 @@ def plot_layer_altair(distances, elevations):
             alt.X('Distance (km)'),
             alt.Y('Elevation (m)'),
             strokeWidth=alt.value(2),
-            color=alt.value('#8DC63F')
+            color=alt.value('#052623')
         )
     
-    chart =  area_chart + line_chart_white + line_chart_green + text
+    # chart =  area_chart + line_chart_white + line_chart_green + text
+    chart = line_chart_white + line_chart_green + text
     chart = chart.properties(
         #title= name, #'Miner\'s way',
         width=500,
@@ -145,7 +146,9 @@ def plot_layer_altair(distances, elevations):
         anchor='middle',
         color='#052623'
     ).configure_view(
-       stroke=None
+       stroke=None,
+       fill='white',
+       fillOpacity= 0.3
     )
 
     return chart

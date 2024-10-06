@@ -73,7 +73,7 @@ if len(str(selected_walk_details.GeoJson.iloc[0]))>1:
             distances, elevations = parse_gpx(gpx_file)
             elev_plot_layer_altair = plot_layer_altair(distances, elevations)
             #draw elevation plot
-            st.altair_chart(elev_plot_layer_altair)
+            st.altair_chart(elev_plot_layer_altair, use_container_width=True)
             
             # check distances
             gpx_dist_km = round(max(distances),1)
