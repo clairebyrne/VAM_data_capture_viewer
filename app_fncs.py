@@ -148,7 +148,7 @@ def plot_layer_altair(distances, elevations):
         color='#052623'
     ).configure_view(
        stroke=None,
-       fill='#42A9C5',
+       #fill='#42A9C5',
        fillOpacity= 0.8
     )
 
