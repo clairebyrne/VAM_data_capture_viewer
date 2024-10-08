@@ -92,14 +92,15 @@ def plot_layer_altair(distances, elevations):
 
     area_chart = alt.Chart(data).mark_area(
         #line={'color':'darkgreen'},
-        color=alt.Gradient(
-            gradient='linear',
-            stops=[alt.GradientStop(color='#8DC63F', offset=0), # brown 8c564b darkgreen 2ca02c rust green #bcbd22
-                   alt.GradientStop(color='#ffffff', offset=1)],
-            x1=1,
-            x2=1,
-            y1=1,
-            y2=0)
+        # color=alt.Gradient(
+        #     gradient='linear',
+        #     stops=[alt.GradientStop(color='#8DC63F', offset=0), # brown 8c564b darkgreen 2ca02c rust green #bcbd22
+        #            alt.GradientStop(color='#ffffff', offset=1)],
+        #     x1=1,
+        #     x2=1,
+        #     y1=1,
+        #     y2=0)
+        color="#052623"
         ).encode(
             alt.X('Distance (km)'),
             alt.Y('Elevation (m)', scale=alt.Scale(domainMin=y_min, #domain=[y_min, y_max], 
@@ -108,7 +109,7 @@ def plot_layer_altair(distances, elevations):
             )
     
 
-    line_chart_white = alt.Chart(data).mark_line(
+    line_chart_thick = alt.Chart(data).mark_line(
         ).encode(
             alt.X('Distance (km)'),
             alt.Y('Elevation (m)'),
@@ -116,7 +117,7 @@ def plot_layer_altair(distances, elevations):
             color=alt.value('#8DC63F')
         )
     
-    line_chart_green = alt.Chart(data).mark_line(
+    line_chart_thin = alt.Chart(data).mark_line(
         ).encode(
             alt.X('Distance (km)'),
             alt.Y('Elevation (m)'),
@@ -124,8 +125,8 @@ def plot_layer_altair(distances, elevations):
             color=alt.value('#052623')
         )
     
-    # chart =  area_chart + line_chart_white + line_chart_green + text
-    chart = line_chart_white + line_chart_green + text
+    chart =  area_chart + line_chart_thick + line_chart_thin + text
+    #chart = line_chart_thick + line_chart_thin + text
     chart = chart.properties(
         #title= name, #'Miner\'s way',
         width=500,
@@ -147,8 +148,8 @@ def plot_layer_altair(distances, elevations):
         color='#052623'
     ).configure_view(
        stroke=None,
-       fill='white',
-       fillOpacity= 0.3
+       fill='#42A9C5',
+       fillOpacity= 0.8
     )
 
     return chart
