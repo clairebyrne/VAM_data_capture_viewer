@@ -103,7 +103,7 @@ def plot_layer_altair(distances, elevations):
         color="#052623"
         ).encode(
             alt.X('Distance (km)'),
-            alt.Y('Elevation (m)', scale=alt.Scale(domainMin=y_min, #domain=[y_min, y_max], 
+            alt.Y('Elevation (m)', scale=alt.Scale(#domainMin=y_min, #domain=[y_min, y_max], 
                                                    zero=False)),
             opacity=alt.value(0.9)
             )
