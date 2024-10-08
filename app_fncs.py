@@ -74,11 +74,11 @@ def plot_layer_altair(distances, elevations):
         'Distance (km)': distances,
         'Elevation (m)': elevations
     })
-    #data.to_csv('data.csv')
     # get y min and max for axis scale
+    x_min = data['Distance (km)'].min()
+    x_max = data['Distance (km)'].max()
     y_min = data['Elevation (m)'].min()
     y_max = data['Elevation (m)'].max() + 20
-    #print(y_min, y_max)
 
     total_ascent = round(get_total_ascent(data))
     text = alt.Chart().mark_text(text=f"Total Ascent: {total_ascent}m", 
@@ -102,9 +102,13 @@ def plot_layer_altair(distances, elevations):
         #     y2=0)
         color="#052623"
         ).encode(
-            alt.X('Distance (km)'),
-            alt.Y('Elevation (m)', scale=alt.Scale(#domainMin=y_min, #domain=[y_min, y_max], 
-                                                   zero=False)),
+            alt.X('Distance (km)',
+                  scale=alt.Scale(type='linear', domain=[x_min, x_max])),
+            alt.Y('Elevation (m)', 
+                  scale=alt.Scale(type='linear', domain=[y_min, y_max]),
+                #   scale=alt.Scale(#domainMin=y_min, #domain=[y_min, y_max], 
+                #                                    zero=False)),
+            ),
             opacity=alt.value(0.9)
             )
     
