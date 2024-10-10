@@ -126,7 +126,7 @@ def plot_layer_altair(distances, elevations):
     chart =  area_chart + line_chart_thick + line_chart_thin + text
     chart = chart.properties(
         width="container",
-        height=150
+        height= 150
     ).configure_axis(
         grid=False,
         tickCount=5,
@@ -147,6 +147,7 @@ def plot_layer_altair(distances, elevations):
        #fill='#42A9C5',
        #fillOpacity= 0.8
     )
+    chart.save('graph.html')
 
     return chart
 

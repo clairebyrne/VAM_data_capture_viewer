@@ -68,50 +68,51 @@ st.dataframe(selected_walk_pois)
 
 
 if len(str(selected_walk_details.GeoJson.iloc[0]))>1:
-        gpx_file= os.path.join(gpx_dir, str(selected_walk_details.GeoJson.iloc[0]))
-        if os.path.isfile(gpx_file):
-            distances, elevations = parse_gpx(gpx_file)
-            elev_plot_layer_altair = plot_layer_altair(distances, elevations)
-            #draw elevation plot
-            st.altair_chart(elev_plot_layer_altair, use_container_width=True)
-            
-            # check distances
-            gpx_dist_km = round(max(distances),1)
-            data_dist_km = (int(selected_walk_details.iloc[0, 11]))/1000
-            dist_diff=abs((data_dist_km - gpx_dist_km) / float(data_dist_km) ) 
-            if dist_diff >=0.1:
-                st.markdown(f'### :red[CHECK DATA!! There is more than a 10% difference in total distance from the gpx file ({gpx_dist_km}km) compared to the data ({data_dist_km}km)]')
-            else:
-                st.markdown(f'#### :blue[Distances are within 10% of each other; gpx file has ({gpx_dist_km}km), data has ({data_dist_km}km)]')
-            
-            # check max elevation
-            gpx_elev_max_m = round(max(elevations),1)
-            data_elev_max = (selected_walk_details.iloc[0, 13])
-            if isinstance(data_elev_max, str):
-                elev_diff=abs((float(data_elev_max) - gpx_elev_max_m) / float(data_elev_max))
-                if elev_diff >=0.1:
-                    st.markdown(f'### :red[CHECK DATA!! There is more than a 10% difference in highest point from the gpx file ({gpx_elev_max_m}m) compared to the data ({data_elev_max}m)]')
+            gpx_file= os.path.join(gpx_dir, str(selected_walk_details.GeoJson.iloc[0]))
+            if os.path.isfile(gpx_file):
+                distances, elevations = parse_gpx(gpx_file)
+                elev_plot_layer_altair = plot_layer_altair(distances, elevations)
+                with st.container(height=150, border=None):
+                    #draw elevation plot
+                    st.altair_chart(elev_plot_layer_altair, use_container_width=True)
+                
+                # check distances
+                gpx_dist_km = round(max(distances),1)
+                data_dist_km = (int(selected_walk_details.iloc[0, 11]))/1000
+                dist_diff=abs((data_dist_km - gpx_dist_km) / float(data_dist_km) ) 
+                if dist_diff >=0.1:
+                    st.markdown(f'### :red[CHECK DATA!! There is more than a 10% difference in total distance from the gpx file ({gpx_dist_km}km) compared to the data ({data_dist_km}km)]')
                 else:
-                    st.markdown(f'#### :blue[Highest point are within 10% of each other; gpx file has ({gpx_elev_max_m}m), data has ({data_elev_max}m)]')
-            else:
-                st.markdown(f'### :red[Highest point is not populated in the data]')
-            
-            # Check total ascent
-            # Create a DataFrame 
-            data = pd.DataFrame({
-                'Distance (km)': distances,
-                'Elevation (m)': elevations
-                })
-            gpx_ascent = round(get_total_ascent(data))
-            data_ascent = selected_walk_details.iloc[0, 14]
-            if isinstance(data_ascent, str):
-                ascent_diff=abs((float(data_ascent) - gpx_ascent) / float(data_ascent))
-                if ascent_diff >=0.1:
-                    st.markdown(f'### :red[CHECK DATA!! There is more than a 10% difference in total ascent from the gpx file ({gpx_ascent}m) compared to the data ({data_ascent}m)]')
+                    st.markdown(f'#### :blue[Distances are within 10% of each other; gpx file has ({gpx_dist_km}km), data has ({data_dist_km}km)]')
+                
+                # check max elevation
+                gpx_elev_max_m = round(max(elevations),1)
+                data_elev_max = (selected_walk_details.iloc[0, 13])
+                if isinstance(data_elev_max, str):
+                    elev_diff=abs((float(data_elev_max) - gpx_elev_max_m) / float(data_elev_max))
+                    if elev_diff >=0.1:
+                        st.markdown(f'### :red[CHECK DATA!! There is more than a 10% difference in highest point from the gpx file ({gpx_elev_max_m}m) compared to the data ({data_elev_max}m)]')
+                    else:
+                        st.markdown(f'#### :blue[Highest point are within 10% of each other; gpx file has ({gpx_elev_max_m}m), data has ({data_elev_max}m)]')
                 else:
-                    st.markdown(f'#### :blue[Total ascent are within 10% of each other; gpx file has ({gpx_ascent}m), data has ({data_ascent}m)]')
-            else:
-                st.markdown(f'### :red[Total ascent not populated in the data]')
+                    st.markdown(f'### :red[Highest point is not populated in the data]')
+                
+                # Check total ascent
+                # Create a DataFrame 
+                data = pd.DataFrame({
+                    'Distance (km)': distances,
+                    'Elevation (m)': elevations
+                    })
+                gpx_ascent = round(get_total_ascent(data))
+                data_ascent = selected_walk_details.iloc[0, 14]
+                if isinstance(data_ascent, str):
+                    ascent_diff=abs((float(data_ascent) - gpx_ascent) / float(data_ascent))
+                    if ascent_diff >=0.1:
+                        st.markdown(f'### :red[CHECK DATA!! There is more than a 10% difference in total ascent from the gpx file ({gpx_ascent}m) compared to the data ({data_ascent}m)]')
+                    else:
+                        st.markdown(f'#### :blue[Total ascent are within 10% of each other; gpx file has ({gpx_ascent}m), data has ({data_ascent}m)]')
+                else:
+                    st.markdown(f'### :red[Total ascent not populated in the data]')
             
 
 
