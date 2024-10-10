@@ -75,39 +75,33 @@ def plot_layer_altair(distances, elevations):
         'Elevation (m)': elevations
     })
     # get y min and max for axis scale
-    x_min = data['Distance (km)'].min()
-    x_max = data['Distance (km)'].max()
     y_min = data['Elevation (m)'].min()
+    print(y_min)
     y_max = data['Elevation (m)'].max() + 20
 
     total_ascent = round(get_total_ascent(data))
     text = alt.Chart().mark_text(text=f"Total Ascent: {total_ascent}m", 
-                                 #font='Branding SF Cmp',        
-                                 #anchor='middle',
-                                 #color='#052623',
-                                 #fontSize=12,
-                                 #font='Myriad Pro Regular',
-                                 #color='#052623'
-                                 ).encode(x=alt.datum(1.5), y=alt.datum(y_max))
+                                 align='left',
+                                 color='#052623',
+                                 font='Myriad Pro Regular',
+                                 ).encode(x=alt.datum(0), y=alt.datum(y_max))
 
     area_chart = alt.Chart(data).mark_area(
-        #line={'color':'darkgreen'},
-        # color=alt.Gradient(
-        #     gradient='linear',
-        #     stops=[alt.GradientStop(color='#8DC63F', offset=0), # brown 8c564b darkgreen 2ca02c rust green #bcbd22
-        #            alt.GradientStop(color='#ffffff', offset=1)],
-        #     x1=1,
-        #     x2=1,
-        #     y1=1,
-        #     y2=0)
-        color="#052623"
+        color=alt.Gradient(
+            gradient='linear',
+            stops=[alt.GradientStop(color='#8DC63F', offset=0), # brown 8c564b darkgreen 2ca02c rust green #bcbd22
+                   alt.GradientStop(color='#ffffff', offset=1)],
+            x1=1,
+            x2=1,
+            y1=1,
+            y2=0)
+        #color="#052623" # no gradient, solid colour
         ).encode(
             alt.X('Distance (km)',
-                  scale=alt.Scale(type='linear', domain=[x_min, x_max])),
+                  ),
             alt.Y('Elevation (m)', 
-                  scale=alt.Scale(type='linear', domain=[y_min, y_max]),
-                #   scale=alt.Scale(#domainMin=y_min, #domain=[y_min, y_max], 
-                #                                    zero=False)),
+                  scale=alt.Scale(
+                                  domain=[y_min, y_max]),
             ),
             opacity=alt.value(0.9)
             )
@@ -130,10 +124,8 @@ def plot_layer_altair(distances, elevations):
         )
     
     chart =  area_chart + line_chart_thick + line_chart_thin + text
-    #chart = line_chart_thick + line_chart_thin + text
     chart = chart.properties(
-        #title= name, #'Miner\'s way',
-        width=500,
+        width="container",
         height=150
     ).configure_axis(
         grid=False,
@@ -142,8 +134,8 @@ def plot_layer_altair(distances, elevations):
         titleFontSize=12,
         titleColor='#052623',
         labelFontSize=10,
-        labelFont='Myriad Pro Regular', # Eurostile Bold
-        labelColor= '#052623', #'#7f7f7f',
+        labelFont='Myriad Pro Regular', 
+        labelColor= '#052623', 
         domainColor= '#052623'
     ).configure_title(
         fontSize=16,
@@ -153,7 +145,7 @@ def plot_layer_altair(distances, elevations):
     ).configure_view(
        stroke=None,
        #fill='#42A9C5',
-       fillOpacity= 0.8
+       #fillOpacity= 0.8
     )
 
     return chart
