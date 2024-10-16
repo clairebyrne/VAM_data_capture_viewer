@@ -123,7 +123,8 @@ def plot_layer_altair(distances, elevations):
             color=alt.value('#052623')
         )
     
-    chart =  area_chart + line_chart_thick + line_chart_thin + text
+    # chart =  area_chart + line_chart_thick + line_chart_thin + text
+    chart =  line_chart_thick + line_chart_thin + text
     chart = chart.properties(
         width="container",
         height= 150
@@ -144,8 +145,8 @@ def plot_layer_altair(distances, elevations):
         color='#052623'
     ).configure_view(
        stroke=None,
-       #fill='#42A9C5',
-       #fillOpacity= 0.8
+    #    fill='#42A9C5',
+    #    fillOpacity= 0.8
     )
     chart.save('graph.html')
 
