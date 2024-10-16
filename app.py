@@ -88,7 +88,8 @@ if len(str(selected_walk_details.GeoJson.iloc[0]))>1:
                 # check max elevation
                 gpx_elev_max_m = round(max(elevations),1)
                 data_elev_max = (selected_walk_details.iloc[0, 13])
-                if isinstance(data_elev_max, str):
+                print(data_elev_max.dtype, data_elev_max)
+                if data_elev_max > 0:
                     elev_diff=abs((float(data_elev_max) - gpx_elev_max_m) / float(data_elev_max))
                     if elev_diff >=0.1:
                         st.markdown(f'### :red[CHECK DATA!! There is more than a 10% difference in highest point from the gpx file ({gpx_elev_max_m}m) compared to the data ({data_elev_max}m)]')
@@ -105,7 +106,8 @@ if len(str(selected_walk_details.GeoJson.iloc[0]))>1:
                     })
                 gpx_ascent = round(get_total_ascent(data))
                 data_ascent = selected_walk_details.iloc[0, 14]
-                if isinstance(data_ascent, str):
+                print(data_ascent)
+                if data_ascent > 0:
                     ascent_diff=abs((float(data_ascent) - gpx_ascent) / float(data_ascent))
                     if ascent_diff >=0.1:
                         st.markdown(f'### :red[CHECK DATA!! There is more than a 10% difference in total ascent from the gpx file ({gpx_ascent}m) compared to the data ({data_ascent}m)]')

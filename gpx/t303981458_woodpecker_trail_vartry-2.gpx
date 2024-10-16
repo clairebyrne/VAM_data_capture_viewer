@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx version="1.1" creator="outdooractive - http://www.outdooractive.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" xmlns:oa="http://www.outdooractive.com/GPX/Extensions/1">
+  <metadata>
+    <name>Woodpecker Trail Vartry 2024-10-16</name>
+    <author>
+      <name>aaron byrne - Community</name>
+    </author>
+    <link href="https://www.outdooractive.com/r/303981458"/>
+    <time>2024-10-16T12:39:32.463Z</time>
+    <extensions>
+      <oa:oaCategory>themeTrail</oa:oaCategory>
+    </extensions>
+  </metadata>
+  <trk>
+    <name>Woodpecker Trail Vartry 2024-10-16</name>
+    <type>themeTrail</type>
+    <trkseg>
+      <trkpt lat="53.07173" lon="-6.204847">
+        <ele>236.0</ele>
+        <name>Reservoir Link, The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:mapZoom>16</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.071755" lon="-6.204885">
+        <ele>236.4</ele>
+      </trkpt>
+      <trkpt lat="53.071773" lon="-6.204925">
+        <ele>236.7</ele>
+      </trkpt>
+      <trkpt lat="53.071886" lon="-6.205133">
+        <ele>238.4</ele>
+      </trkpt>
+      <trkpt lat="53.071952" lon="-6.205247">
+        <ele>238.9</ele>
+      </trkpt>
+      <trkpt lat="53.072038" lon="-6.205406">
+        <ele>238.4</ele>
+      </trkpt>
+      <trkpt lat="53.072337" lon="-6.205958">
+        <ele>229.2</ele>
+      </trkpt>
+      <trkpt lat="53.072396" lon="-6.206071">
+        <ele>227.5</ele>
+      </trkpt>
+      <trkpt lat="53.07241" lon="-6.206098">
+        <ele>227.2</ele>
+      </trkpt>
+      <trkpt lat="53.072604" lon="-6.206459">
+        <ele>225.3</ele>
+      </trkpt>
+      <trkpt lat="53.072874" lon="-6.207004">
+        <ele>221.2</ele>
+      </trkpt>
+      <trkpt lat="53.073145" lon="-6.207549">
+        <ele>222.2</ele>
+      </trkpt>
+      <trkpt lat="53.073415" lon="-6.208095">
+        <ele>222.8</ele>
+      </trkpt>
+      <trkpt lat="53.073685" lon="-6.20864">
+        <ele>222.0</ele>
+      </trkpt>
+      <trkpt lat="53.073955" lon="-6.209185">
+        <ele>222.0</ele>
+      </trkpt>
+      <trkpt lat="53.074225" lon="-6.209731">
+        <ele>222.0</ele>
+      </trkpt>
+      <trkpt lat="53.074322" lon="-6.209927">
+        <ele>222.4</ele>
+        <name>Draw Off Tower, The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:mapZoom>16</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.074495" lon="-6.210276">
+        <ele>223.2</ele>
+      </trkpt>
+      <trkpt lat="53.074765" lon="-6.210821">
+        <ele>223.2</ele>
+      </trkpt>
+      <trkpt lat="53.075035" lon="-6.211367">
+        <ele>223.1</ele>
+      </trkpt>
+      <trkpt lat="53.075305" lon="-6.211912">
+        <ele>222.9</ele>
+      </trkpt>
+      <trkpt lat="53.075576" lon="-6.21244">
+        <ele>229.5</ele>
+      </trkpt>
+      <trkpt lat="53.075848" lon="-6.212969">
+        <ele>233.6</ele>
+      </trkpt>
+      <trkpt lat="53.076005" lon="-6.21331">
+        <ele>237.6</ele>
+      </trkpt>
+      <trkpt lat="53.076163" lon="-6.21365">
+        <ele>239.9</ele>
+      </trkpt>
+      <trkpt lat="53.076245" lon="-6.213848">
+        <ele>240.4</ele>
+        <name>Upper Vartry Trail, The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:mapZoom>16</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.076246" lon="-6.213849">
+        <ele>240.4</ele>
+      </trkpt>
+      <trkpt lat="53.076265" lon="-6.213895">
+        <ele>240.4</ele>
+      </trkpt>
+      <trkpt lat="53.076145" lon="-6.213978">
+        <ele>242.1</ele>
+      </trkpt>
+      <trkpt lat="53.075955" lon="-6.214186">
+        <ele>244.8</ele>
+      </trkpt>
+      <trkpt lat="53.075865" lon="-6.214414">
+        <ele>244.8</ele>
+      </trkpt>
+      <trkpt lat="53.075779" lon="-6.214554">
+        <ele>244.6</ele>
+      </trkpt>
+      <trkpt lat="53.075652" lon="-6.214862">
+        <ele>242.6</ele>
+      </trkpt>
+      <trkpt lat="53.075525" lon="-6.21517">
+        <ele>239.9</ele>
+      </trkpt>
+      <trkpt lat="53.075427" lon="-6.21532">
+        <ele>238.6</ele>
+      </trkpt>
+      <trkpt lat="53.075308" lon="-6.215414">
+        <ele>237.9</ele>
+      </trkpt>
+      <trkpt lat="53.075288" lon="-6.215381">
+        <ele>238.4</ele>
+        <name>The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:mapZoom>16</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.075182" lon="-6.215204">
+        <ele>240.5</ele>
+      </trkpt>
+      <trkpt lat="53.075162" lon="-6.215029">
+        <ele>242.3</ele>
+      </trkpt>
+      <trkpt lat="53.074965" lon="-6.214594">
+        <ele>241.3</ele>
+      </trkpt>
+      <trkpt lat="53.074761" lon="-6.214376">
+        <ele>237.8</ele>
+      </trkpt>
+      <trkpt lat="53.074581" lon="-6.214316">
+        <ele>234.1</ele>
+      </trkpt>
+      <trkpt lat="53.074455" lon="-6.214096">
+        <ele>231.1</ele>
+      </trkpt>
+      <trkpt lat="53.074317" lon="-6.214009">
+        <ele>229.2</ele>
+      </trkpt>
+      <trkpt lat="53.074261" lon="-6.214006">
+        <ele>228.5</ele>
+      </trkpt>
+      <trkpt lat="53.074007" lon="-6.213523">
+        <ele>223.3</ele>
+      </trkpt>
+      <trkpt lat="53.073953" lon="-6.213129">
+        <ele>219.1</ele>
+      </trkpt>
+      <trkpt lat="53.073871" lon="-6.21263">
+        <ele>214.3</ele>
+      </trkpt>
+      <trkpt lat="53.073848" lon="-6.212519">
+        <ele>214.0</ele>
+      </trkpt>
+      <trkpt lat="53.073871" lon="-6.212381">
+        <ele>213.5</ele>
+      </trkpt>
+      <trkpt lat="53.073894" lon="-6.212372">
+        <ele>213.6</ele>
+        <name>The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:mapZoom>16</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.074295" lon="-6.212228">
+        <ele>215.8</ele>
+      </trkpt>
+      <trkpt lat="53.074498" lon="-6.21233">
+        <ele>219.2</ele>
+      </trkpt>
+      <trkpt lat="53.074788" lon="-6.212305">
+        <ele>221.4</ele>
+      </trkpt>
+      <trkpt lat="53.074879" lon="-6.212307">
+        <ele>222.5</ele>
+      </trkpt>
+      <trkpt lat="53.074891" lon="-6.212063">
+        <ele>220.3</ele>
+      </trkpt>
+      <trkpt lat="53.074877" lon="-6.211796">
+        <ele>220.2</ele>
+      </trkpt>
+      <trkpt lat="53.074892" lon="-6.211815">
+        <ele>220.3</ele>
+        <name>The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:mapZoom>16</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.074877" lon="-6.211796">
+        <ele>220.2</ele>
+      </trkpt>
+      <trkpt lat="53.074743" lon="-6.211499">
+        <ele>218.0</ele>
+      </trkpt>
+      <trkpt lat="53.074458" lon="-6.211006">
+        <ele>217.0</ele>
+      </trkpt>
+      <trkpt lat="53.07431" lon="-6.210699">
+        <ele>218.4</ele>
+      </trkpt>
+      <trkpt lat="53.074163" lon="-6.210392">
+        <ele>217.2</ele>
+      </trkpt>
+      <trkpt lat="53.074017" lon="-6.210113">
+        <ele>221.4</ele>
+        <name>Draw Off Tower, The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:mapZoom>16</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.074002" lon="-6.210083">
+        <ele>221.8</ele>
+      </trkpt>
+      <trkpt lat="53.073851" lon="-6.210134">
+        <ele>219.9</ele>
+      </trkpt>
+      <trkpt lat="53.073619" lon="-6.210201">
+        <ele>217.3</ele>
+      </trkpt>
+      <trkpt lat="53.073539" lon="-6.210406">
+        <ele>216.7</ele>
+      </trkpt>
+      <trkpt lat="53.073415" lon="-6.210569">
+        <ele>215.9</ele>
+      </trkpt>
+      <trkpt lat="53.073199" lon="-6.210594">
+        <ele>216.3</ele>
+      </trkpt>
+      <trkpt lat="53.073061" lon="-6.210562">
+        <ele>217.0</ele>
+      </trkpt>
+      <trkpt lat="53.072952" lon="-6.210293">
+        <ele>217.9</ele>
+      </trkpt>
+      <trkpt lat="53.07291" lon="-6.210099">
+        <ele>219.0</ele>
+      </trkpt>
+      <trkpt lat="53.072782" lon="-6.209992">
+        <ele>219.0</ele>
+      </trkpt>
+      <trkpt lat="53.072678" lon="-6.209717">
+        <ele>219.4</ele>
+      </trkpt>
+      <trkpt lat="53.072514" lon="-6.209342">
+        <ele>220.5</ele>
+      </trkpt>
+      <trkpt lat="53.072364" lon="-6.209112">
+        <ele>221.5</ele>
+      </trkpt>
+      <trkpt lat="53.072179" lon="-6.208853">
+        <ele>224.8</ele>
+      </trkpt>
+      <trkpt lat="53.072085" lon="-6.2085">
+        <ele>227.1</ele>
+        <name>53.072085,-6.208500</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:mapZoom>17</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.072024" lon="-6.208266">
+        <ele>228.7</ele>
+      </trkpt>
+      <trkpt lat="53.071928" lon="-6.207929">
+        <ele>231.7</ele>
+      </trkpt>
+      <trkpt lat="53.071832" lon="-6.207591">
+        <ele>234.9</ele>
+      </trkpt>
+      <trkpt lat="53.071832" lon="-6.207055">
+        <ele>237.8</ele>
+      </trkpt>
+      <trkpt lat="53.071913" lon="-6.206887">
+        <ele>237.3</ele>
+      </trkpt>
+      <trkpt lat="53.071932" lon="-6.206781">
+        <ele>237.1</ele>
+      </trkpt>
+      <trkpt lat="53.071809" lon="-6.206587">
+        <ele>238.4</ele>
+      </trkpt>
+      <trkpt lat="53.07173" lon="-6.206461">
+        <ele>239.5</ele>
+      </trkpt>
+      <trkpt lat="53.071661" lon="-6.206544">
+        <ele>239.4</ele>
+      </trkpt>
+      <trkpt lat="53.071617" lon="-6.206728">
+        <ele>239.4</ele>
+        <name>Reservoir Link, The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:mapZoom>17</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.071584" lon="-6.206866">
+        <ele>239.4</ele>
+      </trkpt>
+      <trkpt lat="53.071628" lon="-6.207301">
+        <ele>239.1</ele>
+      </trkpt>
+      <trkpt lat="53.071673" lon="-6.207736">
+        <ele>237.1</ele>
+      </trkpt>
+      <trkpt lat="53.071847" lon="-6.208378">
+        <ele>231.9</ele>
+      </trkpt>
+      <trkpt lat="53.072021" lon="-6.209019">
+        <ele>228.8</ele>
+      </trkpt>
+      <trkpt lat="53.072003" lon="-6.209032">
+        <ele>229.2</ele>
+        <name>Reservoir Link, The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:mapZoom>17</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.071942" lon="-6.209073">
+        <ele>230.7</ele>
+      </trkpt>
+      <trkpt lat="53.071716" lon="-6.20873">
+        <ele>234.6</ele>
+      </trkpt>
+      <trkpt lat="53.071656" lon="-6.208419">
+        <ele>235.0</ele>
+      </trkpt>
+      <trkpt lat="53.071605" lon="-6.208093">
+        <ele>236.5</ele>
+      </trkpt>
+      <trkpt lat="53.07153" lon="-6.207899">
+        <ele>238.3</ele>
+      </trkpt>
+      <trkpt lat="53.071524" lon="-6.207523">
+        <ele>239.3</ele>
+      </trkpt>
+      <trkpt lat="53.071514" lon="-6.207496">
+        <ele>239.4</ele>
+        <name>Reservoir Link, The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:mapZoom>17</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.071441" lon="-6.207298">
+        <ele>239.9</ele>
+      </trkpt>
+      <trkpt lat="53.071416" lon="-6.207114">
+        <ele>240.0</ele>
+      </trkpt>
+      <trkpt lat="53.071379" lon="-6.20684">
+        <ele>240.0</ele>
+      </trkpt>
+      <trkpt lat="53.07148" lon="-6.206571">
+        <ele>239.8</ele>
+      </trkpt>
+      <trkpt lat="53.071563" lon="-6.206393">
+        <ele>239.9</ele>
+      </trkpt>
+      <trkpt lat="53.071643" lon="-6.206181">
+        <ele>240.0</ele>
+      </trkpt>
+      <trkpt lat="53.071703" lon="-6.206066">
+        <ele>240.1</ele>
+        <name>53.071703,-6.206066</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:mapZoom>17</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.071746" lon="-6.205983">
+        <ele>240.2</ele>
+      </trkpt>
+      <trkpt lat="53.071827" lon="-6.205781">
+        <ele>240.0</ele>
+      </trkpt>
+      <trkpt lat="53.071854" lon="-6.205535">
+        <ele>240.0</ele>
+      </trkpt>
+      <trkpt lat="53.071891" lon="-6.205272">
+        <ele>239.0</ele>
+      </trkpt>
+      <trkpt lat="53.071886" lon="-6.205133">
+        <ele>238.4</ele>
+      </trkpt>
+      <trkpt lat="53.071773" lon="-6.204925">
+        <ele>236.7</ele>
+      </trkpt>
+      <trkpt lat="53.071755" lon="-6.204885">
+        <ele>236.4</ele>
+      </trkpt>
+      <trkpt lat="53.07173" lon="-6.204847">
+        <ele>236.0</ele>
+        <name>Reservoir Link, The Municipal District of Wicklow</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:mapZoom>17</oa:mapZoom>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
