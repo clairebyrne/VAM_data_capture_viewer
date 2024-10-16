@@ -88,7 +88,7 @@ if len(str(selected_walk_details.GeoJson.iloc[0]))>1:
                 # check max elevation
                 gpx_elev_max_m = round(max(elevations),1)
                 data_elev_max = (selected_walk_details.iloc[0, 13])
-                print(data_elev_max.dtype, data_elev_max)
+                #print(data_elev_max.dtype, data_elev_max)
                 if data_elev_max > 0:
                     elev_diff=abs((float(data_elev_max) - gpx_elev_max_m) / float(data_elev_max))
                     if elev_diff >=0.1:
@@ -106,7 +106,7 @@ if len(str(selected_walk_details.GeoJson.iloc[0]))>1:
                     })
                 gpx_ascent = round(get_total_ascent(data))
                 data_ascent = selected_walk_details.iloc[0, 14]
-                print(data_ascent)
+                #print(data_ascent)
                 if data_ascent > 0:
                     ascent_diff=abs((float(data_ascent) - gpx_ascent) / float(data_ascent))
                     if ascent_diff >=0.1:

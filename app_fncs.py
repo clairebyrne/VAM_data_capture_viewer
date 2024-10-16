@@ -62,11 +62,137 @@ def parse_gpx(file_path):
     
     return distances, elevations
 
+# def get_total_ascent(data):
+#     data['elev_diff'] = data['Elevation (m)'].diff()
+#     ascents = data[data['elev_diff']>=0]
+#     total_ascent = ascents.elev_diff.sum()
+#     #print('ascent: ', total_ascent)
+#     # descents = data[data['elev_diff']<=0]
+#     # total_descent = descents.elev_diff.sum()*-1 
+#     # print('descent: ', total_descent)
+#     return total_ascent
+
+# # smoothing
+# def get_total_ascent(data, window=10):
+#     # Apply rolling mean to smooth elevation data
+#     data['smoothed_elevation'] = data['Elevation (m)'].rolling(window=window, min_periods=1).mean()
+
+#     # Calculate the differences in smoothed elevation
+#     data['elev_diff'] = data['smoothed_elevation'].diff()
+
+#     # Keep only positive elevation differences (ascents)
+#     ascents = data[data['elev_diff'] > 0]
+
+#     # Sum up the ascent values
+#     total_ascent = ascents['elev_diff'].sum()
+#     return total_ascent
+
+# # downsampling
+# def get_total_ascent(data, sample_rate=10):
+#     # Downsample the data by taking every Nth point
+#     data_sampled = data.iloc[::sample_rate]
+
+#     # Calculate the differences in elevation
+#     data_sampled['elev_diff'] = data_sampled['Elevation (m)'].diff()
+
+#     # Keep only positive elevation differences (ascents)
+#     ascents = data_sampled[data_sampled['elev_diff'] > 0]
+
+#     # Sum up the ascent values
+#     total_ascent = ascents['elev_diff'].sum()
+#     return total_ascent
+
+# # apply minimum change threshold
+# def get_total_ascent(data, threshold=0.0):
+#     # Calculate the differences in elevation
+#     data['elev_diff'] = data['Elevation (m)'].diff()
+
+#     # Apply a threshold to ignore small elevation changes
+#     data['elev_diff'] = data['elev_diff'].apply(lambda x: x if x > threshold else 0)
+
+#     # Keep only positive elevation differences (ascents)
+#     ascents = data[data['elev_diff'] > 0]
+
+#     # Sum up the ascent values
+#     total_ascent = ascents['elev_diff'].sum()
+#     return total_ascent
+
+# # smoothing and minimum threshold
+# tricky to get parameters that work in both mountainous and flatter settings
+# def get_total_ascent(data, window=1, threshold=1):
+#     # Apply rolling mean to smooth elevation data
+#     data['smoothed_elevation'] = data['Elevation (m)'].rolling(window=window, min_periods=1).mean()
+
+#     # Calculate the differences in smoothed elevation
+#     data['elev_diff'] = data['smoothed_elevation'].diff()
+
+#     # Apply a threshold to ignore small elevation changes
+#     data['elev_diff'] = data['elev_diff'].apply(lambda x: x if x > threshold else 0)
+
+#     # Keep only positive elevation differences (ascents)
+#     ascents = data[data['elev_diff'] > 0]
+
+#     # Sum up the ascent values
+#     total_ascent = ascents['elev_diff'].sum()
+#     return total_ascent
+
+# # vary threshold based on overall elevation profile
+# def get_total_ascent(data):
+#     # Calculate elevation range
+#     elevation_range = data['Elevation (m)'].max() - data['Elevation (m)'].min()
+
+#     # Adjust threshold dynamically based on elevation range
+#     if elevation_range < 50:  # relatively flat
+#         threshold = 1  # smaller threshold for flat terrain
+#     else:  # hilly or mountainous
+#         threshold = 5  # larger threshold for noisy, rugged terrain
+
+#     # Calculate the elevation differences
+#     data['elev_diff'] = data['Elevation (m)'].diff()
+
+#     # Apply dynamic threshold to filter small changes
+#     data['elev_diff'] = data['elev_diff'].apply(lambda x: x if x > threshold else 0)
+
+#     # Keep only positive elevation differences (ascents)
+#     ascents = data[data['elev_diff'] > 0]
+
+#     # Sum up the ascent values
+#     total_ascent = ascents['elev_diff'].sum()
+#     return total_ascent
+
+# vary downsample based on overall elevation profile
 def get_total_ascent(data):
-    data['elev_diff'] = data['Elevation (m)'].diff()
-    ascents = data[data['elev_diff']>=0]
-    total_ascent = ascents.elev_diff.sum()
+    # calculate length to node ratio
+    len_node_ratio =  (data['Distance (km)'].max()*1000)/ data.shape[0]
+    print(len_node_ratio)
+    # Calculate elevation range
+    #elevation_range = data['Elevation (m)'].max() - data['Elevation (m)'].min()
+
+    # Adjust threshold dynamically based on elevation range
+    if len_node_ratio < 28:  # relatively flat
+        # Downsample the data by taking every Nth point
+        #data = data.iloc[::30]
+        #threshold = 1  # smaller threshold for flat terrain
+        # Apply rolling mean to smooth elevation data
+        data['smoothed_elevation'] = data['Elevation (m)'].rolling(window=30, min_periods=1).mean()
+    else:  # hilly or mountainous
+        #data = data.iloc[::25]
+        # threshold = 5  # larger threshold for noisy, rugged terrain
+        data['smoothed_elevation'] = data['Elevation (m)'].rolling(window=5, min_periods=1).mean()
+
+    # Calculate the elevation differences
+    data['elev_diff'] = data['smoothed_elevation'].diff()
+
+    # Apply dynamic threshold to filter small changes
+    #data['elev_diff'] = data['elev_diff'].apply(lambda x: x if x > threshold else 0)
+
+    # Keep only positive elevation differences (ascents)
+    ascents = data[data['elev_diff'] > 0]
+
+    # Sum up the ascent values
+    total_ascent = ascents['elev_diff'].sum()
     return total_ascent
+
 
 def plot_layer_altair(distances, elevations):
     # Create a DataFrame for Altair
@@ -76,7 +202,7 @@ def plot_layer_altair(distances, elevations):
     })
     # get y min and max for axis scale
     y_min = data['Elevation (m)'].min()
-    print(y_min)
+    #print(y_min)
     y_max = data['Elevation (m)'].max() + 20
 
     total_ascent = round(get_total_ascent(data))
